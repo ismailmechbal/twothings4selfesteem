@@ -1,0 +1,9 @@
+<%= simple_form_for(@post, html: { class: 'form-vertical' }) do |f| %>
+  <%= f.input :body,
+              as: :text,
+              label: 'Message',
+              error: 'Message is mandatory, please specify one',
+              placeholder: 'I am proud of myself because ...',
+              input_html: {rows:  10} %>
+  <%= f.submit "Submit Post", class: "btn btn-block btn-success" %>
+<% end %>

@@ -10,6 +10,8 @@ gem 'turbolinks'
 
 #Custom
 gem 'devise'
+gem 'materialize-sass'
+gem 'simple_form'
 
 group :development, :test do
   gem 'byebug'

@@ -1,6 +1,10 @@
 <h1>All my posts</h1>
-<% @posts.each do |p| %>
-  <%= p.body %>
-  <%= p.user.email %>
-  <%= p.user.name %>
+<% if @posts_count == 0 %>
+  <%= link_to new_post_path(), class: "link__empty__states" do %>
+    <h6 class="sub-heading margin-bottom-40">Glad to have you here</h6>
+    <h5 class="dashboard-link__new">+ Submit a new post</h5>
+  <% end %>
+<% else %>
+  <%= render @posts %>
 <% end %>
+<div><%= link_to "new post", new_post_path(), class: "link__empty__states" %></div>
