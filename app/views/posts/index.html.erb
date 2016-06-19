@@ -5,6 +5,7 @@
     <h5 class="dashboard-link__new">+ Submit a new post</h5>
   <% end %>
 <% else %>
-  <%= render @posts %>
+  <div class="row">
+    <%= render @posts %>
+  </div>
 <% end %>
-<div><%= link_to "new post", new_post_path(), class: "link__empty__states" %></div>

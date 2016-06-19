@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+@import "materialize/components/color";
+$primary-color: color("blue", "lighten-2") !default;
+@import 'materialize';
+
+h1 {
+  color: #12c5a2;
+  font-size: 2em;
+}
+p {
+  color: #7f7f7f;
+  font-weight: 300;
+}
+.text-center {
+  text-align: center;
+}

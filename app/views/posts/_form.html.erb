@@ -4,6 +4,7 @@
               label: 'Message',
               error: 'Message is mandatory, please specify one',
               placeholder: 'I am proud of myself because ...',
-              input_html: {rows:  10} %>
-  <%= f.submit "Submit Post", class: "btn btn-block btn-success" %>
+              autofocus: true,
+              input_html: {rows:  10, class: "materialize-textarea"} %>
+  <%= f.submit "Submit Post", "data-disable-with"=> "Just a moment...", class: "btn waves-effect waves-light" %>
 <% end %>

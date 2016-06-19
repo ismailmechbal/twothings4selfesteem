@@ -1,1 +1,8 @@
-<h1><%= @post.body %></h1>
+<p class="flow-text">
+  <%= @post.body %>
+</p>
+<div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+  <%= link_to new_post_path(), class: "btn-floating btn-large red" do %>
+    <i class="large material-icons">mode_edit</i>
+  <% end %>
+</div>

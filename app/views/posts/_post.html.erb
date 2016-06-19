@@ -1,2 +1,16 @@
-<%= link_to post.id, post_path(post) %>
-<div>Opened <%= time_ago_in_words post.created_at %></div>
+<div class="col s12 m6 l6">
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><%= post.id %></span>
+      <span class=""><%= post.body %></span>
+    </div>
+    <div class="card-action">
+      <a href="#">Read more</a>
+    </div>
+  </div>
+</div>
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <%= link_to new_post_path(), class: "btn-floating btn-large red" do %>
+    <i class="large material-icons">add</i>
+  <% end %>
+</div>
